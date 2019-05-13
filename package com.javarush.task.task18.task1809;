@@ -1,0 +1,44 @@
+import java.io.FileInputStream;
+import java.io.FileInputStream;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.*;
+import java.io.FileOutputStream;
+
+/* 
+Реверс файла
+*/
+
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
+        
+      String filename1 = reader.readLine();
+      String filename2 = reader.readLine();
+      
+      FileInputStream inputStream = new FileInputStream(filename1);
+      FileOutputStream outputStream2 = new FileOutputStream(filename2);
+      int a=inputStream.available();
+      byte[] buffer = new byte[a];
+      
+            
+            for( int i=inputStream.read(buffer); i>0; i--) 
+            outputStream2.write(buffer[i-1]);
+            
+            inputStream.close();
+            outputStream2.close();
+                  
+    }    
+             
+ }
+
+
+
+    
+
