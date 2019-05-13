@@ -1,18 +1,18 @@
-package com.javarush.task.task03.task0322;
-
+package com.javarush.task.task11.task1101;
 
 /* 
-Большая и чистая
+Лошадь и Пегас
 */
 
-import java.io.*;
-
 public class Solution {
-    public static void main(String[] args) throws Exception {
-        BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
-        String name1 = reader.readLine();
-        String name2 = reader.readLine();
-        String name3 = reader.readLine();
-        System.out.println(name1 + "+ " + name2 + "+ " + name3 +" = Чистая любовь, да-да!");
+    public static void main(String[] args) {
     }
+
+    public class Horse {
+
     }
+
+    public class Pegas extends Horse {
+
+    }
+}
